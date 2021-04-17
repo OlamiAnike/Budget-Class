@@ -45,7 +45,38 @@ class budget:
         print('You have selected the balance option')
         print(f'Your balance for {self.name} is {self.current_balance} naira ')
 
-    
+        """
+            This block of code checks the balance in a category based on the previous transactions
+        """
+
+    def transfer(self):
+        print('===== TRANSFER FUNDS =====')
+        print('You have selected the transfer option')
+        food = ('Monthly food')
+        clothing = ('School Clothing')
+        entertainment = ('Occassional Entertainment')
+        category = int(input('What category do you want to transfer to? \n (1) for food \n (2) for clothing \n (3) for entertainment \n'))
+        
+        
+        if (category == 1):
+            transfer = int(input('Enter the amount you want to transfer: \n'))
+            print(f'You have transferred {transfer} Naira from {self.name} to {food}')
+        
+        elif (category == 2):
+            transfer = int(input('Enter the amount you want to transfer: \n'))
+            print(f'You have transferred {transfer}Naira from {self.name} to {clothing}')
+
+        elif (category == 3):
+            transfer = int(input('Enter the amount you want to transfer: \n'))
+            print(f'You have transferred {transfer} Naira from {self.name} to {entertainment}')
+
+        else:
+            print('Invalid option selected')
+        
+        """
+            This block of code allows for transfer of funds amongst the categories
+        """
+
         
 food = budget('Monthly food')
 clothing = budget('School clothing')
