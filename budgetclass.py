@@ -53,6 +53,3 @@ entertainment = budget('Occasional entertainment')
 
 # please input the category and the method you want to perform an operation on
 
-# dear mentor grading this, i tried to work out a way for the transfer method but i kept getting stuck
-# and this is why my assignment does not contain the transfer method.
-# i hope to learn from your input and corrections. Thank you.
